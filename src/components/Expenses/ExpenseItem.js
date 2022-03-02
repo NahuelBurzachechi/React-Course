@@ -3,7 +3,7 @@ import  './ExpenseItem.css'
 import ExpenseDate from './ExpenseDate';
 import Card from '../UI/Card';
 
-function ExpenseItem(props) {
+const ExpenseItem = (props) => {
     const dateMonth = props.date.toLocaleString('es-ES',{month: 'long'});
     const dateYear = props.date.getFullYear();
     const dateDay = props.date.toLocaleString('es-ES', {day: '2-digit'});
